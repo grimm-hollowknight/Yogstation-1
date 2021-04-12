@@ -14,15 +14,31 @@
 	icon = 'yogstation/icons/obj/chairs.dmi'
 	icon_state = "americhair_black"
 
-turf/open/floor/plasteel/blackwhite
-	name = "ameritard floor"
-	icon = 'yogstation/icons/turf/floors.dmi'
-	icon_state = "blackwhite"
-
-turf/open/floor/plasteel/ameridiner
+/turf/open/floor/plasteel/blackwhite
 	name = "diner floor"
 	icon = 'yogstation/icons/turf/floors.dmi'
-	icon_state = "ameridiner_kitchen"
+	icon_state = "diner"
+	floor_tile = /obj/item/stack/tile/blackwhite
+
+/turf/open/floor/plasteel/ameridiner
+	name = "diner kitchen floor"
+	icon = 'yogstation/icons/turf/floors.dmi'
+	icon_state = "diner_kitchen"
+	floor_tile = /obj/item/stack/tile/ameridiner
+
+/obj/item/stack/tile/blackwhite
+	name = "diner tile"
+	icon = 'yogstation/icons/obj/tiles.dmi'
+	icon_state = "tile-diner"
+	item_state = "tile-diner"
+	turf_type = /turf/open/floor/plasteel/blackwhite
+
+/obj/item/stack/tile/ameridiner
+	name = "diner kitchen tile"
+	icon = 'yogstation/icons/obj/tiles.dmi'
+	icon_state = "tile-ameridiner"
+	item_state = "tile-ameridiner"
+	turf_type = /turf/open/floor/plasteel/ameridiner
 
 /obj/structure/chair/americandiner/booth
 	icon = 'yogstation/icons/obj/chairs.dmi'
